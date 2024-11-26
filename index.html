@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Event Planner</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  
+  </head>
+  
+  <body>
+    <h1>Decentralized Event Planner</h1>
+  
+    <!-- Create Event Form -->
+    <h2>Create Event</h2>
+    <form id="createEventForm">
+      <input type="text" id="eventTitle" placeholder="Event Title" required><br><br>
+      <input type="text" id="eventDescription" placeholder="Event Description" required><br><br>
+      <input type="datetime-local" id="eventDate" required><br><br>
+      <button type="submit">Create Event</button>
+    </form>
+  
+    <!-- RSVP to Event -->
+    <h2>RSVP to Event</h2>
+    <form id="rsvpForm">
+      <input type="number" id="eventIdRSVP" placeholder="Event ID" required><br><br>
+      <button type="submit">RSVP</button>
+    </form>
+  
+    <!-- View Attendees -->
+    <h2>Attendees</h2>
+    <form id="viewAttendeesForm">
+      <input type="number" id="eventIdToView" placeholder="Event ID" required><br><br>
+      <button type="submit">View Attendees</button>
+    </form>
+  
+    <h3>Attendees List:</h3>
+    <ul id="attendeesList"></ul>
+  
+    <!-- Include the app.js file -->
+    <script src="app.js"></script>
+  </body>
+  
+  </html>
